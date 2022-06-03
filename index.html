@@ -504,17 +504,18 @@
                             <div class="s-type text-center">
                                 <div class="s-type-list big">
                                     <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
-                                    <label for="type-baidu" class="" data-id="group-a"><span>常用</span></label>
-                                    <label for="type-baidu1" data-id="group-b"><span>搜索</span></label>
-                                    <label for="type-br"   data-id="group-c"><span>工具</span></label>
-                                    <label for="type-zhihu" data-id="group-d"><span>社区</span></label>
-                                    <label for="type-taobao1" data-id="group-e"><span>生活</span></label>
-                                    <label for="type-zhaopin" data-id="group-f"><span>求职</span></label>
-                                    <label for="type-btjson" data-id="group-g"><span>解析</span></label>
+                                    <label for="type-baidu" class="" data-id="group-a"><span>常用</span></label><label
+                                        for="type-baidu1" data-id="group-b"><span>搜索</span></label><label for="type-br"
+                                        data-id="group-c"><span>工具</span></label><label for="type-zhihu"
+                                        data-id="group-d"><span>社区</span></label><label for="type-taobao1"
+                                        data-id="group-e"><span>生活</span></label><label for="type-zhaopin"
+                                        data-id="group-f"><span>求职</span></label>
+                                    <label for="type-cs"
+                                        data-id="group-g"><span>cs</span></label>
                                 </div>
                             </div>
                         </div>
-                        <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" class="super-search-fm">
+                        <form action="https://nav.iowen.cn?s=" method="get" target="_blank" class="super-search-fm">
                             <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei=""
                                 placeholder="输入关键字搜索" style="outline:0" autocomplete="off">
                             <button type="submit"><i class="iconfont icon-search"></i></button>
@@ -651,24 +652,30 @@
                                 </ul>
                             </div>
                             
-                            
-                             <div class="search-group group-g ">
+                              <div class="search-group group-g ">
                                 <ul class="search-type">
-                                    <li><input hidden="" type="radio" name="type" id="type-btjson"
-                                            value="https://www.mtosz.com/m3u8.php?url="
-                                            data-placeholder="主线"><label for="type-btjson"><span
-                                                class="text-muted">主线</span></label></li>
-                                    <li><input hidden="" type="radio" name="type" id="type-fuxian"
-                                            value="https://nbjx.vip/?url=" data-placeholder="复线"><label
-                                            for="type-fuxian"><span class="text-muted">复线</span></label></li>
-                                    <li><input hidden="" type="radio" name="type" id="type-cixian"
-                                            value="https://www.pangujiexi.com/pangu/?url=" data-placeholder="次线"><label
-                                            for="type-cixian"><span class="text-muted">次线</span></label></li>
-                                    <li><input hidden="" type="radio" name="type" id="type-moxian"
-                                            value="https://jx.m3u8.tv/jiexi/?url=" data-placeholder="末线"><label
-                                            for="type-moxian"><span class="text-muted">末线</span></label></li>
+                                    <li><input hidden="" type="radio" name="type" id="type-cs"
+                                            value="https://www.zhihu.com/search?type=content&q="
+                                            data-placeholder="cs"><label for="type-zhihu"><span
+                                                class="text-muted">知乎</span></label></li>
+                                    <li><input hidden="" type="radio" name="type" id="type-wechat"
+                                            value="https://weixin.sogou.com/weixin?type=2&query="
+                                            data-placeholder="微信"><label for="type-wechat"><span
+                                                class="text-muted">微信</span></label></li>
+                                    <li><input hidden="" type="radio" name="type" id="type-weibo"
+                                            value="https://s.weibo.com/weibo/" data-placeholder="微博"><label
+                                            for="type-weibo"><span class="text-muted">微博</span></label></li>
+                                    <li><input hidden="" type="radio" name="type" id="type-douban"
+                                            value="https://www.douban.com/search?q=" data-placeholder="豆瓣"><label
+                                            for="type-douban"><span class="text-muted">豆瓣</span></label></li>
+                                    <li><input hidden="" type="radio" name="type" id="type-why"
+                                            value="https://ask.seowhy.com/search/?q=" data-placeholder="SEO问答社区"><label
+                                            for="type-why"><span class="text-muted">搜外问答</span></label></li>
                                 </ul>
                             </div>
+                            
+                            
+                            
                         </div>
                         <div class="card search-smart-tips" style="display: none">
                             <ul></ul>
@@ -682,8 +689,6 @@
                             <div class="bulletin mx-1 mx-md-2 carousel-vertical">
                                 <div class="carousel slide" data-ride="carousel" data-interval="3000">
                                     <div class="carousel-inner" role="listbox">
-                                         <div class="carousel-item "><a class="overflowClip_1" href="https://mail.qq.com/" target="_blank">天天向上导航 -
-                                                追剧看电影，我们一路相伴~~~</a></div>
                                         <div class="carousel-item active"><a class="overflowClip_1" href="https://mail.qq.com/" target="_blank">天天向上导航 -
                                                 用心精选每一个链接</a></div>
                                         <div class="carousel-item "><a class="overflowClip_1" href="https://mail.qq.com/" target="_blank">天天向上导航 -
@@ -700,7 +705,6 @@
                 </div>
             </div>
             <div id="content" class="content-site customize-site">
-
 
 
 
@@ -2907,6 +2911,7 @@
         </div><!-- main-content end -->
     </div><!-- page-container end -->
 
+  
     <div class="modal fade search-modal" id="search-modal">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -2917,13 +2922,14 @@
                             <div class="s-type">
                                 <span></span>
                                 <div class="s-type-list">
-                                    <label for="m_type-baidu" data-id="group-a">常用</label>
-                                    <label for="m_type-baidu1" data-id="group-b">搜索</label>
-                                    <label for="m_type-br" data-id="group-c">工具</label>
-                                    <label for="m_type-zhihu" data-id="group-d">社区</label>
-                                    <label for="m_type-taobao1" data-id="group-e">生活</label>
-                                    <label for="m_type-zhaopin" data-id="group-f">求职</label>
-                                    <label for="m_type-btjson" data-id="group-g">解析</label>
+                                    <label for="m_type-baidu" data-id="group-a">常用</label><label for="m_type-baidu1"
+                                        data-id="group-b">搜索</label><label for="m_type-br"
+                                        data-id="group-c">工具</label><label for="m_type-zhihu"
+                                        data-id="group-d">社区</label><label for="m_type-taobao1"
+                                        data-id="group-e">生活</label><label for="m_type-zhaopin"
+                                        data-id="group-f">求职</label>
+                                    <label for="m_type-cs"
+                                        data-id="group-g">cs</label>
                                 </div>
                             </div>
                             <div class="search-group group-a"><span class="type-text text-muted">常用</span>
@@ -3056,28 +3062,33 @@
                                             for="m_type-liepin"><span class="text-muted">猎聘网</span></label></li>
                                 </ul>
                             </div>
-                          
                             
-                            <div class="search-group group-g"><span class="type-text text-muted">解析</span>
+                            <div class="search-group group-g"><span class="type-text text-muted">cs</span>
                                 <ul class="search-type">
-                                    <li><input hidden="" type="radio" name="type2" id="m_type-btjson"
-                                            value="https://www.mtosz.com/m3u8.php?url="
-                                            data-placeholder="主线"><label for="m_type-btjson"><span
-                                                class="text-muted">主线</span></label></li>
-                                    <li><input hidden="" type="radio" name="type2" id="m_type-fuxian"
-                                            value="https://nbjx.vip/?url=" data-placeholder="复线"><label
-                                            for="m_type-fuxian"><span class="text-muted">复线</span></label></li>
-                                    <li><input hidden="" type="radio" name="type2" id="m_type-cixian"
-                                            value="https://www.pangujiexi.com/pangu/?url=" data-placeholder="次线"><label
-                                            for="m_type-cixian"><span class="text-muted">次线</span></label></li>
-                                    <li><input hidden="" type="radio" name="type2" id="m_type-moxian"
-                                            value="https://jx.m3u8.tv/jiexi/?url=" data-placeholder="末线"><label
-                                            for="m_type-moxian"><span class="text-muted">末线</span></label></li>
+                                    <li><input hidden="" type="radio" name="type2" id="m_type-cs"
+                                            value="https://www.zhihu.com/search?type=content&q="
+                                            data-placeholder="知乎"><label for="m_type-zhihu"><span
+                                                class="text-muted">知乎</span></label></li>
+                                    <li><input hidden="" type="radio" name="type2" id="m_type-wechat"
+                                            value="https://weixin.sogou.com/weixin?type=2&query="
+                                            data-placeholder="微信"><label for="m_type-wechat"><span
+                                                class="text-muted">微信</span></label></li>
+                                    <li><input hidden="" type="radio" name="type2" id="m_type-weibo"
+                                            value="https://s.weibo.com/weibo/" data-placeholder="微博"><label
+                                            for="m_type-weibo"><span class="text-muted">微博</span></label></li>
+                                    <li><input hidden="" type="radio" name="type2" id="m_type-douban"
+                                            value="https://www.douban.com/search?q=" data-placeholder="豆瓣"><label
+                                            for="m_type-douban"><span class="text-muted">豆瓣</span></label></li>
+                                    <li><input hidden="" type="radio" name="type2" id="m_type-why"
+                                            value="https://ask.seowhy.com/search/?q=" data-placeholder="SEO问答社区"><label
+                                            for="m_type-why"><span class="text-muted">搜外问答</span></label></li>
                                 </ul>
                             </div>
                             
+                            
+                            
                         </div>
-                        <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" class="super-search-fm">
+                        <form action="https://nav.iowen.cn?s=" method="get" target="_blank" class="super-search-fm">
                             <input type="text" id="m_search-text" class="form-control smart-tips search-key" zhannei=""
                                 autocomplete="off" placeholder="输入关键字搜索" style="outline:0">
                             <button type="submit"><i class="iconfont icon-search"></i></button>
