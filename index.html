@@ -467,21 +467,7 @@
                             </div>
 
                             <ul class="nav navbar-menu text-xs order-1 order-md-2">
-                                <!-- 一言 -->
-                                <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block">
-                                    <script>
-                                        fetch('https://v1.hitokoto.cn')
-                                            .then(response => response.json())
-                                            .then(data => {
-                                                const hitokoto = document.getElementById('hitokoto_text')
-                                                hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-                                                hitokoto.innerText = data.hitokoto
-                                            })
-                                            .catch(console.error)
-                                    </script>
-                                    <div id="hitokoto"><a href="#" target="_blank" id="hitokoto_text">我爱你，洛千婷</a></div>
-                                </li>
-                                <!-- 一言 end -->
+                              <!-- 一言 end -->
                                 <li class="nav-search ml-3 ml-md-4">
                                     <a href="javascript:" data-toggle="modal" data-target="#search-modal"><i
                                             class="iconfont icon-search icon-2x"></i></a>
@@ -504,17 +490,16 @@
                             <div class="s-type text-center">
                                 <div class="s-type-list big">
                                     <div class="anchor" style="position: absolute; left: 50%; opacity: 0;"></div>
-                                    <label for="type-baidu" class="" data-id="group-a"><span>常用</span></label>
-                                    <label for="type-baidu1" data-id="group-b"><span>搜索</span></label>
-                                    <label for="type-br"   data-id="group-c"><span>工具</span></label>
-                                    <label for="type-zhihu" data-id="group-d"><span>社区</span></label>
-                                    <label for="type-taobao1" data-id="group-e"><span>生活</span></label>
-                                    <label for="type-zhaopin" data-id="group-f"><span>求职</span></label>
-                                    <label for="type-jx1" data-id="group-g"><span>解析</span></label>
+                                    <label for="type-baidu" class="" data-id="group-a"><span>常用</span></label><label
+                                        for="type-baidu1" data-id="group-b"><span>搜索</span></label><label for="type-br"
+                                        data-id="group-c"><span>工具</span></label><label for="type-zhihu"
+                                        data-id="group-d"><span>社区</span></label><label for="type-taobao1"
+                                        data-id="group-e"><span>生活</span></label><label for="type-zhaopin"
+                                        data-id="group-f"><span>求职</span></label>
                                 </div>
                             </div>
                         </div>
-                        <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" class="super-search-fm">
+                        <form action="https://nav.iowen.cn?s=" method="get" target="_blank" class="super-search-fm">
                             <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei=""
                                 placeholder="输入关键字搜索" style="outline:0" autocomplete="off">
                             <button type="submit"><i class="iconfont icon-search"></i></button>
@@ -648,25 +633,6 @@
                                     <li><input hidden="" type="radio" name="type" id="type-liepin"
                                             value="https://www.liepin.com/zhaopin/?key=" data-placeholder="猎聘网"><label
                                             for="type-liepin"><span class="text-muted">猎聘网</span></label></li>
-                                </ul>
-                            </div>
-                            
-                            
-                             <div class="search-group group-g ">
-                                <ul class="search-type">
-                                    <li><input hidden="" type="radio" name="type" id="type-jx1"
-                                            value="https://www.mtosz.com/m3u8.php?url="
-                                            data-placeholder="解析线①"><label for="type-jx1"><span
-                                                class="text-muted">解析线①</span></label></li>
-                                    <li><input hidden="" type="radio" name="type" id="type-jx2"
-                                            value="https://nbjx.vip/?url=" data-placeholder="解析②"><label
-                                            for="type-jx2"><span class="text-muted">解析②</span></label></li>
-                                    <li><input hidden="" type="radio" name="type" id="type-jx3"
-                                            value="https://www.pangujiexi.com/pangu/?url=" data-placeholder="解析③"><label
-                                            for="type-jx3"><span class="text-muted">解析③</span></label></li>
-                                    <li><input hidden="" type="radio" name="type" id="type-jx4"
-                                            value="https://jx.m3u8.tv/jiexi/?url=" data-placeholder="解析④"><label
-                                            for="type-jx4"><span class="text-muted">解析④</span></label></li>
                                 </ul>
                             </div>
                         </div>
@@ -3092,7 +3058,7 @@
                     <div class="mb-3">
                         <li id="menu-item-332"
                             class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-332"><a
-                                href="tag/黑洞.html">黑洞</a></li>
+                                href="tag/黑洞.html">bai洞</a></li>
                         <li id="menu-item-333"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-333"><a
                                 href="E5AFBCE888AAE4B8BBE9A298.html">导航主题</a></li>
